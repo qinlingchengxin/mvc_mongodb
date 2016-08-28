@@ -12,15 +12,15 @@
 
     <context:property-placeholder location="classpath:config.properties"/>
 
-    <mongo:mongo id="mongo" replica-set="${mongo.hostport}">
-        <mongo:options connections-per-host="${mongo.connectionsPerHost}"
-                       threads-allowed-to-block-for-connection-multiplier="${mongo.threadsAllowedToBlockForConnectionMultiplier}"
-                       connect-timeout="${mongo.connectTimeout}"
-                       max-wait-time="${mongo.maxWaitTime}"
-                       auto-connect-retry="${mongo.autoConnectRetry}"
-                       socket-keep-alive="${mongo.socketKeepAlive}"
-                       socket-timeout="${mongo.socketTimeout}"
-                       slave-ok="${mongo.slaveOk}"
+    <mongo:mongo id="mongo" replica-set="139.129.24.231:27017">
+        <mongo:options connections-per-host="8"
+                       threads-allowed-to-block-for-connection-multiplier="4"
+                       connect-timeout="1000"
+                       max-wait-time="1500"
+                       auto-connect-retry="true"
+                       socket-keep-alive="true"
+                       socket-timeout="1500"
+                       slave-ok="true"
                        write-number="1"
                        write-timeout="0"
                        write-fsync="true"/>
