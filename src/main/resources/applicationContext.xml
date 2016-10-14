@@ -12,7 +12,7 @@
 
     <context:property-placeholder location="classpath:config.properties"/>
 
-    <mongo:mongo id="mongo" replica-set="139.129.24.231:27017">
+    <mongo:mongo id="mongo" replica-set="192.168.10.156:27017">
         <mongo:options connections-per-host="8"
                        threads-allowed-to-block-for-connection-multiplier="4"
                        connect-timeout="1000"

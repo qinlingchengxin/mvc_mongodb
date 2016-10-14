@@ -7,7 +7,6 @@
     <artifact type="exploded-war" build-on-make="true" name="mvc_mongodb">
       <output-path>$PROJECT_DIR$/../out/artifacts/mvc_mongodb_war_exploded</output-path>
       <root id="root">
-        <element id="javaee-facet-resources" facet="mvc_mongodb/web/Web" />
         <element id="directory" name="WEB-INF">
           <element id="directory" name="classes">
             <element id="module-output" name="mvc_mongodb" />
@@ -49,13 +48,14 @@
             <element id="library" level="project" name="Maven: javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1" />
             <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
             <element id="library" level="project" name="Maven: org.tuckey:urlrewritefilter:4.0.3" />
-            <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:3.3.0" />
-            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-mongodb:1.8.2.RELEASE" />
-            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.11.2.RELEASE" />
-            <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.13" />
             <element id="library" level="project" name="Maven: org.mongodb:mongo-java-driver:2.10.1" />
+            <element id="library" level="project" name="Maven: org.slf4j:jcl-over-slf4j:1.7.13" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-mongodb:1.8.2.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.12.4.RELEASE" />
+            <element id="library" level="project" name="Maven: org.springframework.data:spring-data-commons:1.11.2.RELEASE" />
           </element>
         </element>
+        <element id="javaee-facet-resources" facet="mvc_mongodb/web/Web" />
       </root>
     </artifact>
   </component>
